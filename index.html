@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telugu TTS</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🗣️ తెలుగు వాయిస్ చదువు</h1>
+      <button id="themeToggle">🌓 థీమ్ మార్చు</button>
+    </div>
+    <select id="voiceSelect">
+      <option>వాయిస్ లోడవుతోంది...</option>
+    </select>
+    <textarea id="textInput" placeholder="ఇక్కడ తెలుగు టైప్ చేయండి..."></textarea>
+    <div class="controls">
+      <label>Rate: <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1"/></label>
+      <label>Pitch: <input type="range" id="pitch" min="0" max="2" step="0.1" value="1"/></label>
+    </div>
+    <div class="buttons">
+      <button onclick="speak()">🔊 చదవు</button>
+      <button onclick="clearText()">🧹 క్లియర్ చేయి</button>
+      <button onclick="sampleText()">💬 ఉదాహరణ</button>
+    </div>
+    <p id="status"></p>
+    <h3>🕘 మాటల చరిత్ర</h3>
+    <ul id="historyList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
